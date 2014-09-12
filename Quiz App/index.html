@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="QuizStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+   <h1><img id="banner" src="http://i.imgur.com/YmdWnUk.png"></h1>
+
+    <div id="q1" class="well">
+        Who Rules the Candy Kingdom?
+       <table>
+           <tr>
+               <td onclick="rightans1();"><img src="http://i.imgur.com/SZWMpfe.png"></td><!--PB-->
+               <td onclick="wrongans1();"><img src="http://i.imgur.com/P5W8TZn.png" /></td><!--LSP-->
+           </tr>
+           <tr>       
+               <td onclick="wrongans1();"><img src="http://i.imgur.com/kLz61UX.png"></td><!--Jake-->
+               <td onclick="wrongans1();"><img src="http://i.imgur.com/rVB9Wvc.png"></td><!--Shelby-->
+           </tr>
+       </table>       
+    </div>
+
+    <div id="q2" class="well">
+        Who is Finn and Jake's roommate?
+        <table>
+        <tr>
+            <td onclick="wrongans2();"><img src="http://i.imgur.com/TtnIkSZ.png" /></td><!--Gunter-->
+            <td onclick="wrongans2();"><img src="http://i.imgur.com/P5W8TZn.png" /></td><!--LSP-->
+        </tr>
+        <tr>
+            <td onclick="wrongans2();"><img src="http://i.imgur.com/Jlk2Da0.png"></td><!--Fionna-->
+            <td onclick="rightans2();"><img src="http://i.imgur.com/8C458SZ.png"></td><!--Beemo-->
+        </tr>
+        </table>
+    </div>
+
+   <!--Question 3-->
+     <div id="q3" class="well">
+        Who doesn't have a crush on Finn?
+        <table>
+            <tr>
+                <td onclick="wrongans3();"><img src="http://i.imgur.com/o4FG7O9.png"></td><!--TreeTrunks-->
+                <td onclick="wrongans3();"><img src="http://i.imgur.com/P5W8TZn.png"></td><!--LSP-->
+            </tr>
+            <tr>
+                <td onclick="rightans3();"><img src="http://i.imgur.com/SZWMpfe.png"></td><!--PB-->
+                <td onclick="wrongans3();"><img src="http://i.imgur.com/jWEnLJD.png"></td><!--MusclePrincess-->
+            </tr>
+        </table>    
+    </div>
+
+    <!--Question 4-->
+    <div id="q4" class="well">
+        Who is Finn's girlfriend?
+        <br /><br />
+        <table>
+            <tr>
+                <td onclick="wrongans4();"><img src="http://i.imgur.com/jWEnLJD.png"></td><!--Muscle Princess-->
+                <td onclick = "rightans4();"><img src="http://i.imgur.com/ACxpu8G.png"></td> <!--Finn's Single!-->
+            </tr>
+            <tr>
+                <td onclick="wrongans4();"><img src="http://i.imgur.com/oUDViR5.png"></td><!--Cake-->
+                <td onclick="wrongans4();"><img src="http://i.imgur.com/aKu41oc.png"> </td><!--flame princess-->
+            </tr>
+        </table>
+    </div>
+
+    <!--Question 5-->
+    <div id="q5" class="well">
+        Who did the Ice King Marry?<br /><br />
+        <table>
+            <tr>
+                <td onclick="wrongans5();"><img id=""src="http://i.imgur.com/JIx0wCn.png" /> </td><!--ice queen-->
+                <td onclick="wrongans5();"><img src="http://i.imgur.com/8dlplSo.png"></td><!--Old Lady Princess-->
+            </tr>
+            <tr>
+                <td onclick="rightans5();"><img src="http://i.imgur.com/kLz61UX.png"></td><!--Jake-->
+                <td onclick="wrongans5();"><img src="http://i.imgur.com/SZWMpfe.png"></td><!--PB-->
+            </tr>
+        </table>
+    </div>
+
+    <div id="endQuizPass" class="well">
+        <img id="pass" onclick="location.reload()" src="http://i.imgur.com/13Wis2B.png">
+        <h6>click to start over</h6>
+    </div>
+
+    <div id="endQuizFail" class="well">
+        <img id ="fail" onclick="location.reload()" src="http://i.imgur.com/AEhRu6b.png">
+        <h6>click to try again</h6>
+    </div>
+
+
+    <script src="JavaScript.js"></script>
+</body>
+</html>
